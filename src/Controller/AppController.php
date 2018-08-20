@@ -31,7 +31,7 @@ class AppController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('DisplayErrorMessage');
-        // $this->loadComponent('Auth', [
+         $this->loadComponent('Auth', [
         //     'authError'    => 'Your session has expired. Please log in again',
         //     'loginRedirect' => [
         //     'controller' => 'users',
