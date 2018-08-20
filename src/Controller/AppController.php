@@ -32,27 +32,27 @@ class AppController extends Controller
         $this->loadComponent('Flash');
         $this->loadComponent('DisplayErrorMessage');
          $this->loadComponent('Auth', [
-        //     'authError'    => 'Your session has expired. Please log in again',
-        //     'loginRedirect' => [
-        //     'controller' => 'users',
-        //     'action' => 'index'
-        //     ],
-        //     'logoutRedirect' => [
-        //     'controller' => 'users',
-        //     'action' => 'login'
-        //      ],
-        //     'authenticate' => [
-        //     'Form' => [
-        //     'userModel' => 'users',
-        //     'fields' => [
-        //     'username' => 'username',
-        //     'password' => 'password' ]]],
-        //     'loginAction' => [
-        //     'controller' => 'users',
-        //     'action' => 'login'
-        //     ],
-        //     'unauthorizedRedirect' => $this->referer()
-    //]);
+            'authError'    => 'Your session has expired. Please log in again',
+            'loginRedirect' => [
+            'controller' => 'users',
+            'action' => 'index'
+            ],
+            'logoutRedirect' => [
+            'controller' => 'users',
+            'action' => 'login'
+             ],
+            'authenticate' => [
+            'Form' => [
+            'userModel' => 'users',
+            'fields' => [
+            'username' => 'username',
+            'password' => 'password' ]]],
+            'loginAction' => [
+            'controller' => 'users',
+            'action' => 'login'
+            ],
+            'unauthorizedRedirect' => $this->referer()
+    ]);
     $this->Auth->allow(['login']);
        // $this->loadComponent('Security');
         //$this->loadComponent('Csrf');
